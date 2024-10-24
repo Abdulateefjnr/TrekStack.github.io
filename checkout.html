@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <title>TREKSTACK MASTER COLLECTION WEBSIT TEMPLATE</title>
+</head>
+<body>
+
+
+    <!-- Search model -->
+	<div class="search-model" id="Mysearch">
+        <img  class="hidesearch" onclick="shows()"  src="img/icons/cross.png"  alt="">
+		<div class="search-model-col">
+			<form class="search-model-form">
+				<input type="text" id="search-input" placeholder="Search here.....">
+			</form>
+		</div>
+	</div>
+	<!-- Search model end -->
+
+    <!--- FAVORITE-CART --->
+    <section class="favorite-cart" id="Mycart">
+        <div class="favorite-details">
+            <div class="favorite-action">
+                <h3>your favorite</h3>
+            <img  src="img/icons/cross.png" onclick="off()" alt="">
+            </div>
+    
+            <div class="favorite-details-box">
+                <div class="box-favorite">
+                    <img src="img/product_1.png" alt="">
+                    <div class="box-favorite-txt">
+                        <h4><a href="#">Classic trench coatt by H&M (Brown)</a></h4>
+                        <span>1 x 200$</span>
+                    </div>
+                </div>
+                <div class="box-favorite">
+                    <img src="img/product_2.png" alt="">
+                    <div class="box-favorite-txt">
+                        <h4><a href="#">Leather thick Green Bag by COZA (Green)</a></h4>
+                        <span>1 x 230$</span>
+                    </div>
+                </div>
+                <div class="box-favorite">
+                    <img src="img/product_3.png" alt="">
+                    <div class="box-favorite-txt">
+                        <h4><a href="#">Yellow cotton Thick jacket made by COZA</a></h4>
+                        <span>1 x 220$</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="favorite-down">
+                <span>total:$650</span>
+                <div class="favorite-btn">
+                    <a href="cart.html">view cart</a>
+                    <a href="checkout.html">check cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NAV -->
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="">
+        </a>
+
+        <div class="nav-bar" id="navbar">
+            <img class="hidemenu" onclick="hideMenu()" src="img/icons/cross.png" alt="">
+            <ul>
+                <li><a class="active" href="index.html">home</a></li>
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="#">promotion</a></li>
+                <li><a href="#">pages <span class="caret"></span></a>
+                    <ul class="sub-menu">
+                        <li><a href="single.html">single product</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="checkout.html">Check Out</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-IMG">
+            <a href="#">
+                <img src="img/icons/search.png"  onclick="sides()" alt="">
+            </a>
+            <a href="javascript:void(0)">
+                <img src="img/icons/heart.png" onclick="cart()" alt="">
+            </a>
+            <a href="cart.html">
+                <img src="img/icons/cart.png" alt="">
+                <span>4</span>
+            </a>
+        </div>
+        <img class="Showmenu" onclick="showMenu()" src="img/icons/menu.png" alt="">
+    </nav>
+
+    <!-- SHOPPING-CHECK-PAG -->
+    <section class="check-out">
+        <div class="container">
+            <div class="links-link">
+                <li><a href="index.html">home</a></li>
+                <li><a href="shop.html">shop</a></li>
+                <li><a class="active" href="checkout.html">checkout</a></li>
+            </div>
+            <div class="row">
+                <div class="check-out-col">
+                    <div class="check-out-lg-8">
+                        <button type="button" class="collapsible">
+                            <span class="collapsible-icon">&#9989;</span>Billing Address
+                        </button>
+                        <div class="collaspsible-card-content">
+                            <div class="billing-form">
+                                <form action="index.html">
+                                    <p><input type="text" placeholder="Name"></p>
+                                    <p><input type="email" placeholder="Email"></p>
+                                    <p><input type="text" placeholder="Address"></p>
+                                    <p><input type="tel" placeholder="Phone"></p>
+                                    <p><textarea name="bill" id="bill" cols="30" rows="10" placeholder="Say Something"></textarea></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="check-out-lg-8">
+                        <button type="button" class="collapsible">
+                            <span class="collapsible-icon">&#9989;</span>Shipping Address
+                        </button>
+                        <div class="collaspsible-card-content">
+                            <div class="shipping-address-form">
+                                <p>Your shipping address form is here.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="check-out-lg-8">
+                        <button type="button" class="collapsible">
+                            <span class="collapsible-icon">&#9989;</span>Card Details
+                        </button>
+                        <div class="collaspsible-card-content">
+                            <div class="card-details">
+                                <p>Your card details goes here.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="chect-out-col">
+                    <div class="check-out-lg-4">
+                        <table>
+                            <tr>
+                                <th>Your order Details</th>
+                                <th>price</th>
+                            </tr>
+                            <tr>
+                                <td><h4>Product</h4></td>
+                                <td><h3>Product</h3></td>
+                            </tr>
+                            <tr>
+                                <td><h4>Strawberry</h4></td>
+                                <td><h3>$85</h3></td>
+                            </tr>
+                            <tr>
+                                <td><h4>Berry</h4></td>
+                                <td><h3>$75</h3></td>
+                            </tr>
+                            <tr>
+                                <td><h4>Lemon</h4></td>
+                                <td><h3>$35</h3></td>
+                            </tr>
+                            <tr>
+                                <td><h4>Avocado</h4></td>
+                                <td><h3>$55</h3></td>
+                            </tr>
+                            <tr>
+                                <td><h4>Green Apple</h4></td>
+                                <td><h3>$20</h3></td>
+                            </tr>
+                            <tr>
+                                <td><h4>Strawberry</h4></td>
+                                <td><h3>$25</h3></td>
+                            </tr>
+                        </table>
+                        <div class="cart-buttons">
+                            <a href="checkout.html" class="boxed-btn black">Check Out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/js.js"></script>
+
+    <!--- ROW_IMAGE -->
+    <div class="row-images">
+        <a href="shop.html"><img src="img/icons/marketplace.png" alt=""></a>
+    </div>
+
+</body>
+</html>

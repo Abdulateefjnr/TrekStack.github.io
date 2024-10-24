@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <title>TREKSTACK MASTER COLLECTION WEBSIT TEMPLATE</title>
+</head>
+<body>
+
+
+    <!-- Search model -->
+	<div class="search-model" id="Mysearch">
+        <img  class="hidesearch" onclick="shows()"  src="img/icons/cross.png"  alt="">
+		<div class="search-model-col">
+			<form class="search-model-form">
+				<input type="text" id="search-input" placeholder="Search here.....">
+			</form>
+		</div>
+	</div>
+	<!-- Search model end -->
+
+    <!--- FAVORITE-CART --->
+    <section class="favorite-cart" id="Mycart">
+        <div class="favorite-details">
+            <div class="favorite-action">
+                <h3>your favorite</h3>
+            <img  src="img/icons/cross.png" onclick="off()" alt="">
+            </div>
+    
+            <div class="favorite-details-box">
+                <div class="box-favorite">
+                    <img src="img/product_1.png" alt="">
+                    <div class="box-favorite-txt">
+                        <h4><a href="#">Classic trench coatt by H&M (Brown)</a></h4>
+                        <span>1 x 200$</span>
+                    </div>
+                </div>
+                <div class="box-favorite">
+                    <img src="img/product_2.png" alt="">
+                    <div class="box-favorite-txt">
+                        <h4><a href="#">Leather thick Green Bag by COZA (Green)</a></h4>
+                        <span>1 x 230$</span>
+                    </div>
+                </div>
+                <div class="box-favorite">
+                    <img src="img/product_3.png" alt="">
+                    <div class="box-favorite-txt">
+                        <h4><a href="#">Yellow cotton Thick jacket made by COZA</a></h4>
+                        <span>1 x 220$</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="favorite-down">
+                <span>total:$650</span>
+                <div class="favorite-btn">
+                    <a href="cart.html">view cart</a>
+                    <a href="checkout.html">check cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NAV -->
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="">
+        </a>
+
+        <div class="nav-bar" id="navbar">
+            <img class="hidemenu" onclick="hideMenu()" src="img/icons/cross.png" alt="">
+            <ul>
+                <li><a class="active" href="index.html">home</a></li>
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="#">promotion</a></li>
+                <li><a href="#">pages <span class="caret"></span></a>
+                    <ul class="sub-menu">
+                        <li><a href="single.html">single product</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="checkout.html">Check Out</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-IMG">
+            <a href="#">
+                <img src="img/icons/search.png"  onclick="sides()" alt="">
+            </a>
+            <a href="javascript:void(0)">
+                <img src="img/icons/heart.png" onclick="cart()" alt="">
+            </a>
+            <a href="cart.html">
+                <img src="img/icons/cart.png" alt="">
+                <span>4</span>
+            </a>
+        </div>
+        <img class="Showmenu" onclick="showMenu()" src="img/icons/menu.png" alt="">
+    </nav>
+
+    <!-- SINGLE_PAGES -->
+    <section class="single-product">
+        <div class="container">
+            <div class="links-link" style="margin-bottom: 79px;">
+                <li><a href="index.html">home</a></li>
+                <li><a class="active" href="shop.html">shop</a></li>
+            </div>
+            <div class="row">
+                <div class="single-product-col col-lg-7">
+                    <div class="single-product-images">
+                        <div class="row">
+                            <div class="single-product-thumbnails">
+                                <ul>
+                                    <li><img src="img/single_1.jpg" alt="single_1" class="small-img"></li>
+                                    <li><img src="img/single_2.jpg" alt="single_2" class="small-img"></li>
+                                    <li><img src="img/single_3.jpg" alt="single_3" class="small-img"></li>
+                                </ul>
+                            </div>
+                            <div class="single-product-image order-2">
+                                <img src="img/single_2.jpg" alt="single_2" id="productImg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-product-col coL-5">
+                    <div class="single-product-txt">
+                        <div class="single-product-title">
+                            <h2>Pocket cotton sweatshirt</h2>
+                            <p>Designed with the jet-setting man in mind, the travel Collection Shirt
+                                is lightweight, comfortable to crease, resistant.
+                            </p>
+                        </div>
+
+                        <div class="single-product-free-delivery">
+                            <span class="t-truck"><img src="img/icons/delivery.png" alt=""></span><span>free delivery</span>
+                        </div>
+                        <div class="original-price">$629.99</div>
+                        <div class="product-prices">$495.00</div>
+                        <ul class="star-rating">
+                            <li>&#11088;</li>
+                            <li>&#11088;</li>
+                            <li>&#11088;</li>
+                            <li>&#11088;</li>
+                            <li>&#11088;</li>
+                        </ul>
+                        <div class="product-color">
+                            <span>Select Color:</span>
+                            <ul>
+                                <li style="background: #e54e5d"></li>
+                                <li style="background: #252525"></li>
+                                <li style="background: #60b3f3"></li>
+                            </ul>
+                        </div>
+                        <div class="quantity">
+                            <span>Quantity:</span>
+                            <div class="pro-qty">
+                                <input type="number" value="1">
+                            </div>
+                            <div class="label-btn" >
+                                <a href="#" >Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TAB_SINGLE_PRODUCT -->
+    <div class="tab-single-product">
+        <div class="container">
+            <div class="tab-title">
+                <h2>description</h2>
+            </div>
+            <div class="row">
+                <div class="tab-single-product-col">
+                    <div class="tab-single-product-col-5">
+                        <div class="tab-book-text">
+                            <h2>Pocket cotton sweatshirt</h2>
+                            <p>Designed with the jet-setting man in mind, the travel Collection Shirt
+                                is lightweight, comfortable to crease, resistant.
+                            </p>
+                        </div>
+                        <div class="tab-book-img">
+                            <img src="img/desc_1.jpg" alt="">
+                        </div>
+                        <div class="tab-book-text">
+                            <h2>Pocket cotton sweatshirt</h2>
+                            <p>Designed with the jet-setting man in mind, the travel Collection Shirt
+                                is lightweight, comfortable to crease, resistant.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-single-product-col-5 tab-offset">
+                        <div class="tab-book-img">
+                            <img src="img/desc_2.jpg" alt="">
+                        </div>
+                        <div class="tab-book-text ">
+                            <h2>Pocket cotton sweatshirt</h2>
+                            <p>Designed with the jet-setting man in mind, the travel Collection Shirt
+                                is lightweight, comfortable to crease, resistant.
+                            </p>
+                        </div>
+                        <div class="tab-book-img">
+                            <img src="img/desc_3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--- SERVICE_CATE --->
+    <section class="service-cate">
+        <div class="product-container">
+            <div class="row">
+                <div class="service-care-col">
+                    <img src="img/icons/services1.svg" alt="">
+                    <div>
+                        <h3>Free Shipping</h3>
+                    <p>Suffered Alteration in Some Form</p>
+                    </div>
+                </div>
+                <div class="service-care-col">
+                    <img src="img/icons/services2.svg" alt="">
+                    <div>
+                        <h3>Secure payment</h3>
+                    <p>The Internet Tend To Repeat.</p>
+                    </div>
+                </div>
+                <div class="service-care-col">
+                    <img src="img/icons/services3.svg" alt="">
+                    <div>
+                        <h3>open all week</h3>
+                        <p>8AM - 09PM</p>
+                    </div>
+                </div>
+                <div class="service-care-col">
+                    <img src="img/icons/services4.svg" alt="">
+                    <div>
+                        <h3>24hr delivery</h3>
+                        <p>Making it Look Like Readable</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!--- SUBSCRIBE --->
+    <section class="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="subscribe-col">
+                    <div class="subscribe-box">
+                        <h2>subscribe to get discount offer!</h2>
+                        <p>We offer discount to our customer's up to 50%.
+                        </p> 
+                    </div>
+                </div>
+                <div class="subscribe-col">
+                    <div class="subscribe-form">
+                        <form action="">
+                            <input type="email" placeholder="Your Email">
+                            <button class="subscribe-btn">subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--- FOOTER --->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-right">
+                        <li><img src="img/icons/instagram-icon.png" alt=""></li>
+                        <li><img src="img/icons/fb-icon.png" alt=""></li>
+                        <li><img src="img/icons/twitter-icon.png" alt=""></li>
+                        <li><img src="img/icons/youtub-icon.png" alt=""></li>
+                        <li><img src="img/icons/linkedin-icon.png" alt=""></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>All right reserved by &copy;TREK STACK 2025 <img src="img/icons/heart.png" alt=""></p>
+        </div>
+    </footer>
+
+
+    
+    <!-- JAVASCRIPT -->
+    <script src="js/js.js"></script>
+
+    <!--- ROW_IMAGE -->
+    <div class="row-images">
+        <a href="shop.html"><img src="img/icons/marketplace.png" alt=""></a>
+    </div>
+
+</body>
+</html>

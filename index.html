@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <title>TREKSTACK MASTER COLLECTION WEBSIT TEMPLATE</title>
+</head>
+<body>
+
+
+    <!-- Search model -->
+	<div class="search-model" id="Mysearch">
+        <img  class="hidesearch" onclick="shows()"  src="img/icons/cross.png"  alt="">
+		<div class="search-model-col">
+			<form class="search-model-form">
+				<input type="text" id="search-input" placeholder="Search here.....">
+			</form>
+		</div>
+	</div>
+	<!-- Search model end -->
+
+    <!--- FAVORITE-CART --->
+    <section class="favorite-cart" id="Mycart">
+        <div class="favorite-details">
+            <div class="favorite-action">
+                <h3>your favorite</h3>
+            <img  src="img/icons/cross.png" onclick="off()" alt="">
+            </div>
+    
+            <div class="favorite-details-box">
+                <div class="box-favorite">
+                    <img src="img/product_1.png" alt="">
+                    <div class="box-favorite-txt">
+                        <h4><a href="#">Classic trench coatt by H&M (Brown)</a></h4>
+                        <span>1 x 200$</span>
+                    </div>
+                </div>
+                <div class="box-favorite">
+                    <img src="img/product_2.png" alt="">
+                    <div class="box-favorite-txt">
+                        <h4><a href="#">Leather thick Green Bag by COZA (Green)</a></h4>
+                        <span>1 x 230$</span>
+                    </div>
+                </div>
+                <div class="box-favorite">
+                    <img src="img/product_3.png" alt="">
+                    <div class="box-favorite-txt">
+                        <h4><a href="#">Yellow cotton Thick jacket made by COZA</a></h4>
+                        <span>1 x 220$</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="favorite-down">
+                <span>total:$650</span>
+                <div class="favorite-btn">
+                    <a href="cart.html">view cart</a>
+                    <a href="checkout.html">check cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NAV -->
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="">
+        </a>
+
+        <div class="nav-bar" id="navbar">
+            <img class="hidemenu" onclick="hideMenu()" src="img/icons/cross.png" alt="">
+            <ul>
+                <li><a class="active" href="index.html">home</a></li>
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="#">promotion</a></li>
+                <li><a href="#">pages <span class="caret"></span></a>
+                    <ul class="sub-menu">
+                        <li><a href="single.html">single product</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="checkout.html">Check Out</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-IMG">
+            <a href="#">
+                <img src="img/icons/search.png"  onclick="sides()" alt="">
+            </a>
+            <a href="javascript:void(0)">
+                <img src="img/icons/heart.png" onclick="cart()" alt="">
+            </a>
+            <a href="cart.html">
+                <img src="img/icons/cart.png" alt="">
+                <span>4</span>
+            </a>
+        </div>
+        <img class="Showmenu" onclick="showMenu()" src="img/icons/menu.png" alt="">
+    </nav>
+
+    <!-- HEADER -->
+    <section class="header">
+        <div class="header-media">
+            <h6>Spring / Summer Collection 2024</h6>
+            <h1>Get up to 30% Off New Arrivals</h1>
+            <div class="header-btn"><a href="#">shop now</a></div>
+        </div>
+    </section>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <div class="row">
+            <div class="banner-col">
+                <img src="img/banner_1.jpg" alt="">
+                <div class="banner-overlay">
+                    women's
+                </div>
+            </div>
+            <div class="banner-col">
+                <img src="img/banner_2.jpg" alt="">
+                <div class="banner-overlay">
+                    ACCESSORIES'S
+                </div>
+            </div>
+            <div class="banner-col">
+                <img src="img/banner_3.jpg" alt="">
+                <div class="banner-overlay">
+                    men's
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT -->
+    <section class="product">
+        <div class="product-container">
+            <div class="text-headings">
+                <h3><span>New</span> Arrivals</h3>
+                <div id="myBtncontainer">
+                    <button class="btn activeZ" onclick="filterSelection('all')"> All</button>
+                    <button class="btn" onclick="filterSelection('WOMENZ')">women's</button>
+                    <button class="btn" onclick="filterSelection('ACCESX')">ACCESSORIES</button>
+                    <button class="btn" onclick="filterSelection('MenZ')">Men's</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product-col MenZ">
+                    <figure>
+                        <img src="img/product_1.png" alt="">
+                        <div class="product-favorite"><img src="img/icons/icon-heart-01.png" alt=""></div>
+                        <div class="product-bubble"><span>-$30</span></div>
+                    </figure>
+                    <div class="product-txt">
+                        <h6>Classic trench coatt by H&M (Brown)</h6>
+                        <div class="product-price">
+                            -- $200 <span>$230</span> --
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-col WOMENZ">
+                    <figure>
+                        <img src="img/product_2.png" alt="">
+                        <div class="product-favorite-right"><img src="img/icons/icon-heart-01.png" alt=""></div>
+                        <div class=" product-bubble-left"><span>-$30</span></div>
+                    </figure>
+                    <div class="product-txt">
+                        <h6>Leather thick Green Bag by COZA (Green)</h6>
+                        <div class="product-price">
+                            -- $230 --
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-col WOMENZ">
+                    <figure>
+                        <img src="img/product_3.png" alt="">
+                        <div class="product-favorite-right"><img src="img/icons/icon-heart-01.png" alt=""></div>
+                    </figure>
+                    <div class="product-txt">
+                        <h6>Yellow cotton Thick jacket made by COZA</h6>
+                        <div class="product-price">
+                            -- $220 --
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-col ACCESX">
+                    <figure>
+                        <img src="img/product_4.png" alt="">
+                        <div class="product-favorite"><img src="img/icons/icon-heart-01.png" alt=""></div>
+                        <div class="product-bubble"><span>-$30</span></div>
+                    </figure>
+                    <div class="product-txt">
+                        <h6>DYMO hand holding bag with thick rop attached</h6>
+                        <div class="product-price">
+                            -- $67 --
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-col WOMENZ MenZ" style="border-right: none;">
+                    <figure>
+                        <div class="product-favorite-right"><img src="img/icons/icon-heart-01.png" alt=""></div>
+                        <img src="img/product_5.png" alt="">
+                    </figure>
+                    <div class="product-txt">
+                        <h6>pumainadia ankle sneaker big cat engery pique</h6>
+                        <div class="product-price">
+                            -- $60 --
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+    
+
+                <div class="product-col ACCESX">
+                    <figure>
+                        <img src="img/product_6.png" alt="">
+                        <div class="product-favorite"><img src="img/icons/icon-heart-01.png" alt=""></div>
+                        <div class="product-bubble"><span>-$30</span></div>
+                    </figure>
+                    <div class="product-txt">
+                        <h6>Classic modern glassess by H&M (strong)</h6>
+                        <div class="product-price">
+                            -- $200 <span>$230</span> --
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-col WOMENZ">
+                    <figure>
+                        <img src="img/product_7.png" alt="">
+                        <div class="product-favorite-right"><img src="img/icons/icon-heart-01.png" alt=""></div>
+                    </figure>
+                    <div class="product-txt">
+                        <h6>Yellow cotton Thick jacket made by COZA</h6>
+                        <div class="product-price">
+                            -- $40 --
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-col ACCESX">
+                    <figure>
+                        <img src="img/product_8.png" alt="">
+                        <div class="product-favorite-right"><img src="img/icons/icon-heart-01.png" alt=""></div>
+                    </figure>
+                    <div class="product-txt">
+                        <h6>Brown thick pause tie dye trolley bag</h6>
+                        <div class="product-price">
+                            -- $80 --
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-col">
+                    <figure>
+                        <img src="img/product_9.png" alt="">
+                        <div class="product-favorite"><img src="img/icons/icon-heart-01.png" alt=""></div>
+                        <div class="product-bubble"><span>-$30</span></div>
+                    </figure>
+                    <div class="product-txt">
+                        <h6>Shirt in Stretch Cotton with a V neck</h6>
+                        <div class="product-price">
+                            -- $110 --
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-col MenZ" style="border-right: none;">
+                    <figure>
+                        <img src="img/product_10.png" alt="">
+                        <div class="product-favorite-right"><img src="img/icons/icon-heart-01.png" alt=""></div>
+                    </figure>
+                    <div class="product-txt">
+                        <h6>testured t-shirt with a long Stretchable hand</h6>
+                        <div class="product-price">
+                            -- $60 --
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- DEAL_OFFTHE_WEEEK -->
+    <section class="deal-ofthe-week">
+        <div class="container">
+            <div class="row">
+                <div class="deal-ofthe-week-col">
+                    <figure>
+                        <img src="img/deal_ofthe_week.png" alt="">
+                    </figure>
+                </div>
+
+                <div class="deal-ofthe-week-col deal-ofthe-weak-center">
+                    <div class="deal-ofthe-week-txt">
+                        <div>
+                            <h4>Deal Of The Week</h4>
+                        </div>
+                        <div class="deal-ofthe-week-bubble">
+                            <div class="deal-bubble-tag">
+                                <span id="day">0</span>
+                                <p>days</p>
+                            </div>
+                            <div class="deal-bubble-tag">
+                                <span id="hour">00</span>
+                                <p>hours</p>
+                            </div>
+                            <div class="deal-bubble-tag">
+                                <span id="minute">00</span>
+                                <p>mins</p>
+                            </div>
+                            <div class="deal-bubble-tag">
+                                <span id="second">0</span>
+                                <p>sec</p>
+                            </div>
+                        </div>
+                        <div class="header-btn"><a href="#">shop now</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- DEAL_OFFTHE_WEEEK -->
+    <section class="product product-Scoll">
+        <div class="product-container">
+            <div class="text-headings">
+                <h3><span>Best</span> Sellers</h3>
+            </div>
+            <div class="row">
+                <div class="product-col product-Best">
+                    <figure>
+                        <img src="img/product_1.png" alt="">
+                        <div class="product-favorite"><img src="img/icons/icon-heart-01.png" alt=""></div>
+                        <div class="product-bubble"><span>-$30</span></div>
+                    </figure>
+                    <div class="product-txt">
+                        <h6>Classic trench coatt by H&M (Brown)</h6>
+                        <div class="product-price">
+                            -- $200 <span>$230</span> --
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-col product-Best">
+                    <figure>
+                        <img src="img/product_2.png" alt="">
+                        <div class="product-favorite-right"><img src="img/icons/icon-heart-01.png" alt=""></div>
+                        <div class=" product-bubble-left"><span>-$30</span></div>
+                    </figure>
+                    <div class="product-txt">
+                        <h6>Leather thick Green Bag by COZA (Green)</h6>
+                        <div class="product-price">
+                            -- $230 --
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-col product-Best">
+                    <figure>
+                        <img src="img/product_3.png" alt="">
+                        <div class="product-favorite-right"><img src="img/icons/icon-heart-01.png" alt=""></div>
+                    </figure>
+                    <div class="product-txt">
+                        <h6>Yellow cotton Thick jacket made by COZA</h6>
+                        <div class="product-price">
+                            -- $220 --
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-col product-Best">
+                    <figure>
+                        <img src="img/product_4.png" alt="">
+                        <div class="product-favorite"><img src="img/icons/icon-heart-01.png" alt=""></div>
+                        <div class="product-bubble"><span>-$30</span></div>
+                    </figure>
+                    <div class="product-txt">
+                        <h6>DYMO hand holding bag with thick rop attached</h6>
+                        <div class="product-price">
+                            -- $67 --
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-col product-Best" style="border-right: none;">
+                    <figure>
+                        <div class="product-favorite-right"><img src="img/icons/icon-heart-01.png" alt=""></div>
+                        <img src="img/product_5.png" alt="">
+                    </figure>
+                    <div class="product-txt">
+                        <h6>pumainadia ankle sneaker big cat engery pique</h6>
+                        <div class="product-price">
+                            -- $60 --
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--- SERVICE_CATE --->
+    <section class="service-cate">
+        <div class="product-container">
+            <div class="row">
+                <div class="service-care-col">
+                    <img src="img/icons/services1.svg" alt="">
+                    <div>
+                        <h3>Free Shipping</h3>
+                    <p>Suffered Alteration in Some Form</p>
+                    </div>
+                </div>
+                <div class="service-care-col">
+                    <img src="img/icons/services2.svg" alt="">
+                    <div>
+                        <h3>Secure payment</h3>
+                    <p>The Internet Tend To Repeat.</p>
+                    </div>
+                </div>
+                <div class="service-care-col">
+                    <img src="img/icons/services3.svg" alt="">
+                    <div>
+                        <h3>open all week</h3>
+                        <p>8AM - 09PM</p>
+                    </div>
+                </div>
+                <div class="service-care-col">
+                    <img src="img/icons/services4.svg" alt="">
+                    <div>
+                        <h3>24hr delivery</h3>
+                        <p>Making it Look Like Readable</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- BLOG_PAGE -->
+    <section class="blog-page">
+        <div class="text-headings">
+            <h3><span>Latest</span> Blogs</h3>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="blog-page-col">
+                    <div>
+                        <img src="img/blog_1.jpg" alt="">
+                    </div>
+                    <div class="blog-page-overlay blog-page-d-flex">
+                        <h4>Here are the trends I see coming this fall</h4>
+                        <span><strong>By admin</strong> | Dec 30, 2024</span>
+                        <div class="blog-page-btn"><a href="#">read more</a></div>
+                    </div>
+                </div>
+                <div class="blog-page-col">
+                    <div>
+                        <img src="img/blog_2.jpg" alt="">
+                    </div>
+                    <div class="blog-page-overlay blog-page-d-flex">
+                        <h4>Here are the trends I see coming this fall</h4>
+                        <span><strong>By admin</strong> | Oct 30, 2024</span>
+                        <div class="blog-page-btn"><a href="#">read more</a></div>
+                    </div>
+                </div>
+                <div class="blog-page-col">
+                    <div>
+                        <img src="img/blog_3.jpg" alt="">
+                    </div>
+                    <div class="blog-page-overlay blog-page-d-flex">
+                        <h4>Here are the trends I see coming this fall</h4>
+                        <span><strong>By admin</strong> | Nov 30, 2024</span>
+                        <div class="blog-page-btn"><a href="#">read more</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--- SUBSCRIBE --->
+    <section class="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="subscribe-col">
+                    <div class="subscribe-box">
+                        <h2>subscribe to get discount offer!</h2>
+                        <p>We offer discount to our customer's up to 50%.
+                        </p> 
+                    </div>
+                </div>
+                <div class="subscribe-col">
+                    <div class="subscribe-form">
+                        <form action="">
+                            <input type="email" placeholder="Your Email">
+                            <button class="subscribe-btn">subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--- FOOTER --->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-right">
+                        <li><img src="img/icons/instagram-icon.png" alt=""></li>
+                        <li><img src="img/icons/fb-icon.png" alt=""></li>
+                        <li><img src="img/icons/twitter-icon.png" alt=""></li>
+                        <li><img src="img/icons/youtub-icon.png" alt=""></li>
+                        <li><img src="img/icons/linkedin-icon.png" alt=""></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>All right reserved by &copy;TREK STACK 2025 <img src="img/icons/heart.png" alt=""></p>
+        </div>
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/js.js"></script>
+    <script src="js/pjs.js"></script>
+
+    <!--- ROW_IMAGE -->
+    <div class="row-images">
+        <a href="shop.html"><img src="img/icons/marketplace.png" alt=""></a>
+    </div>
+
+</body>
+</html>
